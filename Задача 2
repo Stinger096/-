@@ -1,0 +1,23 @@
+class Sort:
+    def __init__(self, nums):
+        self.nums = nums
+       
+    def bubble_sort(self, nums):  
+    
+        swapped = True
+    
+        while swapped:
+            swapped = False
+            for i in range(len(self.nums) - 1):
+                if self.nums[i] > self.nums[i + 1]:
+                      
+                       self.nums[i], self.nums[i + 1] = self.nums[i + 1], self.nums[i]
+                       
+                       swapped = True
+        return self.nums
+        
+list_of_nums = [int(s) for s in input("Введите элементы списка чисел, разделяя их пробелами").split()]  
+
+sorted_list_of_nums = Sort(list_of_nums)
+
+print("Отсортированный список чисел: ", sorted_list_of_nums.bubble_sort(list_of_nums))
