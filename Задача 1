@@ -1,0 +1,36 @@
+import math 
+class MyMath():
+
+   def __init__(self, a, b):
+       self.a = a
+       self.b = b
+
+   def addition(self):
+      return self.a+self.b
+
+   def multiplication(self):
+       return self.a*self.b
+
+   def division(self):
+       return self.a/self.b
+
+   def subtraction(self):
+       return self.a-self.b
+
+   def pow(self):
+       return self.a**self.b
+
+   def sqrt(self):
+       return math.sqrt(self.a)
+
+a = int(input("Введите число a: "))
+
+b = int(input("Введите число b: "))
+
+result = MyMath(a,b)
+print("Сложение двух чисел: ", result.addition())
+print("Умножение двух чисел: ", result.multiplication())
+print("Деление двух чисел: ", result.division())
+print("Вычитание двух чисел: ", result.subtraction())
+print("Возведение чисел: ", result.pow())
+print("Извлечение квадратного корня: ", result.sqrt())
